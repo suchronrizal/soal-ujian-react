@@ -1,5 +1,16 @@
+import Layout from '@/components/layout/layout'
+import {CartProvider} from '@/context/provider'
 import '@/styles/globals.css'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }) {
+
+  return (
+      <CartProvider> 
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </CartProvider>
+    )
 }
+
+export default App

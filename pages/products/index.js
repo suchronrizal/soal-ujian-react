@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from 'react';
 import ProductList from '@/components/product/product-list';
 
-export default function Home() {
+const Products = () => {
   const [products, setProducts] = useState([]);
 
   const getData = async () =>{
@@ -18,9 +18,11 @@ export default function Home() {
     getData()
   },[])
 
-  return (
+  return(
     <Fragment>
       <ProductList data={products} />
     </Fragment>
   )
 }
+
+export default Products

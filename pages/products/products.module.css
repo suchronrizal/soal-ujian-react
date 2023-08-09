@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 185px;
+  background-color: white;
+  color: #282c34;
+  border-radius: 0.5rem;
+  display: block;
+  background-clip: border-box;
+}
+
+.card .card-img {
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
